@@ -30,4 +30,5 @@ fetch('https://api.escuelajs.co/api/v1/categories/',{
     error.innerText = 'მონაცემები არ ჩაიტვირთა !!!';
     $('.error').css('color','red');
     $('.loader').css('opacity','0');
+    
 });

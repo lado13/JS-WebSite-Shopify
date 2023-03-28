@@ -46,6 +46,7 @@ fetch('https://api.escuelajs.co/api/v1/products/',{
                 col.style.display = 'block'
             }else{
                 col.style.display = 'none'
+        
             }
 
         });
@@ -95,6 +96,8 @@ fetch('https://api.escuelajs.co/api/v1/products/',{
             }
 
         }); 
+
+        
        
     }
 

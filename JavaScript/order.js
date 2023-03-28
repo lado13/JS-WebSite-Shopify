@@ -7,7 +7,8 @@ function URLp(){
 };
 async function detals(){
     URLp().then(Response => Response.json())
-    .then(Response => {     
+    .then(Response => { 
+
         document.querySelector('.order_name').innerText = Response.title;
         document.querySelector('.order_price').innerText =  Response.price + ' GEL';
         document.querySelector('.order_img').src = Response.images;
@@ -17,14 +18,10 @@ async function detals(){
         let orderbox = document.querySelector('.order_box')
 
         dlt.addEventListener('click',function(){
-
-            localStorage.removeItem('id')
-            orderbox.remove()
-
-            
-
+            orderbox.remove()         
         })
-        
+        let cart = localStorage.getItem("id")
+        console.log(cart);
     }).catch(fale => {
     let error = document.querySelector('.error');
     error.innerText = 'მონაცემები არ ჩაიტვირთა !!!';
