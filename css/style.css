@@ -51,7 +51,7 @@ header .search_box {
   border: 1px solid rgb(226, 226, 226);
   border-radius: 15px;
   width: 400px;
-  z-index: 9999;
+  z-index: 9999 !important;
   padding: 15px;
   display: none;
   overflow-y: auto;
@@ -81,7 +81,6 @@ header .container {
   margin-top: 58px;
 }
 header .container .carousel {
-  z-index: -1;
   background: linear-gradient(92.78deg, #C39DF3 0.81%, #7F9CE7 98.52%);
   border-radius: 12px;
   width: 1396px;
@@ -136,7 +135,7 @@ header .container .carousel .carousel-inner .carusel_content .laptop_box .laptop
   left: 451px;
 }
 header .container .carousel .carousel-inner .carusel_content .laptop_box .lap_1 {
-  z-index: 99999;
+  z-index: 1;
 }
 header .container .carousel .carousel-inner .carusel_content .laptop_box .lap_2 {
   position: absolute;

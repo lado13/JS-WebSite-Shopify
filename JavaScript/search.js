@@ -9,12 +9,12 @@ inp.addEventListener('keyup', function(){
  }).then(res => res.json())
  .then(data =>{
      
-
     let searchbox = document.querySelector('.search_box');
     while (searchbox.firstChild) {
-        searchbox.firstChild.remove()
-    }
 
+        searchbox.firstChild.remove()
+
+    }
 
     if (data.length == 0 || value == ''){
 
@@ -25,7 +25,7 @@ inp.addEventListener('keyup', function(){
         searchbox.style['display'] = "block"
 
     }
-    
+
     for (let i = 0; i < data.length; i++) {
         console.log(data[i].title);
         let div = document.createElement('div');

@@ -52,7 +52,7 @@ header{
         border: 1px solid rgb(226, 226, 226);
         border-radius: 15px;
         width: 400px;
-        z-index: 9999;
+        z-index: 9999 !important;
         padding: 15px;
         display: none;
         overflow-y: auto;
@@ -82,7 +82,7 @@ header{
         padding: 0;
         margin-top: 58px;
         .carousel{
-            z-index: -1;
+           
             background: linear-gradient(92.78deg, #C39DF3 0.81%, #7F9CE7 98.52%);
             border-radius: 12px;
             width: 1396px;
@@ -128,16 +128,19 @@ header{
             }
            
             .carousel-inner{
+                
                 .carusel_content{
                     position: relative;
                     max-width: 450px;
                     margin-left: 130px;
                     margin-top: 50px;
+                   
 
                    .laptop_box{
                     position: absolute;
                     top: 2px;
                     left: -76px;
+                    
                     .laptop{
                         position: absolute;
                         width: 594px;
@@ -146,7 +149,7 @@ header{
                         left: 451px;  
                     }
                     .lap_1{
-                        z-index: 99999;
+                        z-index:1 ;
                     }
                     .lap_2{
 
