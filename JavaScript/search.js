@@ -23,7 +23,7 @@ inp.addEventListener('keyup', function(){
     }else{
 
         searchbox.style['display'] = "block"
-        
+
     }
     
     for (let i = 0; i < data.length; i++) {
@@ -49,8 +49,7 @@ inp.addEventListener('keyup', function(){
             let id = data[i].id;
             localStorage.setItem('id', id);
             window.location.href  = 'detals.html';
-            alert('done')
-
+        
         })  
     }
     console.log(value);
