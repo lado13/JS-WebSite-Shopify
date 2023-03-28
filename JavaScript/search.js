@@ -18,11 +18,12 @@ inp.addEventListener('keyup', function(){
 
     if (data.length == 0 || value == ''){
 
-        searchbox.style['display'] = "none"
+        searchbox.style.display = 'none'
 
     }else{
 
-        searchbox.style['display'] = "block"
+        
+        searchbox.style.display = 'block'
 
     }
 
