@@ -3,16 +3,25 @@
 let inp =  document.querySelector('.inp_search')
 
 inp.addEventListener('keyup', function(){
+
     let searchboxs = document.querySelector('.search_box');
+    
     searchboxs.style.display = 'block';
     $(".loaders").css('opacity ','1')
+   
     let value = inp.value
+  
     fetch('https://api.escuelajs.co/api/v1/products?title=' + value,{
+  
     method: 'get'
+
  }).then(res => res.json())
  .then(data =>{
+
      $(".loaders").css('opacity ','0')
+
     let searchbox = document.querySelector('.search_box');
+   
     while (searchbox.firstChild) {
 
         searchbox.firstChild.remove()
@@ -52,9 +61,8 @@ inp.addEventListener('keyup', function(){
             localStorage.setItem('id', id);
             window.location.href  = 'detals.html';
         
-        })  
-    }
-    
+        });
+    };
 });
 });
 

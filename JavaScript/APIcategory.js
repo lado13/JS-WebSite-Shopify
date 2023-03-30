@@ -1,3 +1,4 @@
+
 Getprodact(null);
 
 fetch('https://api.escuelajs.co/api/v1/categories/',{
@@ -23,20 +24,26 @@ fetch('https://api.escuelajs.co/api/v1/categories/',{
         img.src = 'images/categoryarrow.svg';
 
         li.addEventListener('click', function(){
+
             let row = document.querySelector('.product');
+
             $('.loader').css('opacity','1');
+
             while (row.firstChild) {
+
                 row.firstChild.remove()
                 
             }
-            Getprodact(data[i].id)
-            
-        })
-        
 
+            Getprodact(data[i].id)
+
+        });
     };
+
 }).catch(fale => {
+
     let error = document.querySelector('.error');
+
     error.innerText = 'მონაცემები არ ჩაიტვირთა !!!';
     $('.error').css('color','red');
     $('.loader').css('opacity','0');
@@ -46,8 +53,8 @@ fetch('https://api.escuelajs.co/api/v1/categories/',{
 
 function Getprodact(id){
 
-    
 
+    
 fetch('https://api.escuelajs.co/api/v1/products/',{
 
 method:'get',
@@ -56,17 +63,16 @@ method:'get',
 .then(data =>{
 
 
-for (let i = 0; i < data.length; i++) {
+for (let i = 0; i < 15; i++) {
 
-    $('.loader').css('opacity','0')
-
+    $('.loader').css('opacity','0');
 
     if (id  == data[i].category.id || id == null) {
 
     let row = document.querySelector('.product');
     let col = document.createElement('col');
     row.appendChild(col);
-    col.className = 'product_detal' 
+    col.className = 'product_detal';
     let img = document.createElement('img');
     col.appendChild(img);
     img.className = 'product_img';
@@ -84,24 +90,20 @@ for (let i = 0; i < data.length; i++) {
         let id = data[i].id;
         localStorage.setItem('id', id);
         window.location.href  = 'detals.html';
-    });
-    }
 
- 
-}
+    });
+    };
+};
 
 
 
 }).catch(fale => {
+
 let error = document.querySelector('.error');
+
 error.innerText = 'მონაცემები არ ჩაიტვირთა !!!';
 $('.error').css('color','red');
 $('.loader').css('opacity','0');
+
 });
-
-
-
-
-
-
-}
+};
