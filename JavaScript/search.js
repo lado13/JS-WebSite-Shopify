@@ -22,7 +22,6 @@ inp.addEventListener('keyup', function(){
 
     }else{
 
-        
         searchbox.style.display = 'block'
 
     }
