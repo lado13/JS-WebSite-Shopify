@@ -1,6 +1,4 @@
-
-
-      
+   
 
 let order = localStorage.getItem('id');
 function Url(){

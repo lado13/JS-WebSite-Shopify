@@ -58,6 +58,20 @@ header{
         overflow-y: auto;
         max-height: 500px;
         backdrop-filter: blur(10px);
+
+        .search_inner{
+            position: relative;
+            height: 400px;
+            .loaders{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(187, 7, 7);
+            }
+
+        }
+        
         
         .search_div{
             cursor: pointer;

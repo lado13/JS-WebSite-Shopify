@@ -59,6 +59,17 @@ header .search_box {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
+header .search_box .search_inner {
+  position: relative;
+  height: 400px;
+}
+header .search_box .search_inner .loaders {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(187, 7, 7);
+}
 header .search_box .search_div {
   cursor: pointer;
   border: 1px solid rgb(224, 224, 224);
