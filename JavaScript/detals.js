@@ -28,7 +28,6 @@ addbag.addEventListener('click', function(){
     URLp().then(Response => Response.json())
     .then(Response => { 
         localStorage.setItem("cart "  + Response.title ,  Response.id)
-        
-    })
+   
+})
 });
-detals();
