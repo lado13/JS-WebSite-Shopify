@@ -4,7 +4,7 @@ let inp =  document.querySelector('.inp_search')
 
 inp.addEventListener('keyup', function(){
     let value = inp.value
-    fetch('https://api.escuelajs.co/api/v1/products?title='+value,{
+    fetch('https://api.escuelajs.co/api/v1/products?title=' + value,{
     method: 'get'
  }).then(res => res.json())
  .then(data =>{
@@ -27,7 +27,7 @@ inp.addEventListener('keyup', function(){
     }
 
     for (let i = 0; i < data.length; i++) {
-        console.log(data[i].title);
+        
         let div = document.createElement('div');
         searchbox.appendChild(div);
         div.className = 'search_div'
@@ -42,9 +42,9 @@ inp.addEventListener('keyup', function(){
         img.src = data[i].images
         price.innerText = 'Price: ' + data[i].price + ' $'
 
-        let searchdiv = document.querySelector('.search_div')
+        
 
-        searchdiv.addEventListener('click', function(){
+        div.addEventListener('click', function(){
 
             let id = data[i].id;
             localStorage.setItem('id', id);
@@ -52,7 +52,7 @@ inp.addEventListener('keyup', function(){
         
         })  
     }
-    console.log(value);
+    
 });
 });
 

@@ -1,12 +1,14 @@
 
 
-let seeMore = localStorage.getItem('id');
-function URLp(){
-    let data = fetch('https://api.escuelajs.co/api/v1/products/' + seeMore);
+      
+
+let order = localStorage.getItem('id');
+function Url(){
+    let data = fetch('https://api.escuelajs.co/api/v1/products/' + order);
     return data;
 };
-async function detals(){
-    URLp().then(Response => Response.json())
+async function Detals(){
+    Url().then(Response => Response.json())
     .then(Response => { 
 
         document.querySelector('.order_name').innerText = Response.title;
@@ -18,17 +20,21 @@ async function detals(){
         let orderbox = document.querySelector('.order_box')
 
         dlt.addEventListener('click',function(){
-            orderbox.remove()         
+            
+            orderbox.remove()  
+           
         })
-        let cart = localStorage.getItem("id")
-        console.log(cart);
+        
+        
     }).catch(fale => {
-    let error = document.querySelector('.error');
-    error.innerText = 'მონაცემები არ ჩაიტვირთა !!!';
-    $('.error').css('color','red');
-    $('.loader').css('opacity','0');
-    
-});
+        let error = document.querySelector('.error');
+        error.innerText = 'მონაცემები არ ჩაიტვირთა !!!';
+        $('.error').css('color','red');
+        $('.loader').css('opacity','0');
+        
+    });
 };
 
-detals();
+Detals();
+
+  
