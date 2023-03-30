@@ -45,7 +45,6 @@ inp.addEventListener('keyup', function(){
         img.src = data[i].images
         price.innerText = 'Price: ' + data[i].price + ' $'
 
-        
 
         div.addEventListener('click', function(){
 

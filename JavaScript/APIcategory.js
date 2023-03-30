@@ -63,8 +63,6 @@ for (let i = 0; i < data.length; i++) {
 
     if (id  == data[i].category.id || id == null) {
 
-        
-
     let row = document.querySelector('.product');
     let col = document.createElement('col');
     row.appendChild(col);
