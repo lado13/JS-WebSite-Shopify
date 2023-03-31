@@ -408,6 +408,10 @@ footer {
     right: -29px;
     margin-top: 76px;
   }
+  .product_list {
+    max-width: 400px;
+    margin: auto !important;
+  }
   .order_container .order_box {
     display: block;
     text-align: center;

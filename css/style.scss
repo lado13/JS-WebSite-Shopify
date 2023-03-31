@@ -489,6 +489,7 @@ footer{
     .product_detal{
         .container{
             .row{
+                
                 .col{
                     width: 600px;
                     .detals_img{
@@ -511,6 +512,11 @@ footer{
         }
 
         
+    }
+
+    .product_list{
+        max-width: 400px;
+        margin: auto !important;
     }
 
     .order_container{
