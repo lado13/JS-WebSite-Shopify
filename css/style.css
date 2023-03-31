@@ -409,8 +409,18 @@ footer {
     margin-top: 76px;
   }
   .product_list {
-    max-width: 400px;
+    width: 90%;
     margin: auto !important;
+  }
+  .product_list .product_detal {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
+  }
+  .product_list .product_detal .product_img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .order_container .order_box {
     display: block;

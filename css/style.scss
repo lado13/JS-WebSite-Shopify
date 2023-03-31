@@ -515,8 +515,19 @@ footer{
     }
 
     .product_list{
-        max-width: 400px;
+        width: 90%;
+       
         margin: auto !important;
+        .product_detal{
+            width:100% !important;
+            margin: 0 !important;
+            margin-top: 50px !important;
+            margin-bottom: 20px !important;
+            .product_img{
+                object-fit: cover;
+            }
+        }
+
     }
 
     .order_container{
