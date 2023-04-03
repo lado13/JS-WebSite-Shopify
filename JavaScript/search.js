@@ -38,7 +38,7 @@ inp.addEventListener('keyup', function(e){
 
     }
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < 15; i++) {
         
         let div = document.createElement('div');
         searchbox.appendChild(div);
