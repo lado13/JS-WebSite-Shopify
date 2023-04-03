@@ -49,7 +49,7 @@ header{
         top: 43%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 1px solid rgb(226, 226, 226);
+        border: 3px solid #e2e2e2;
         border-radius: 15px;
         width: 400px;
         z-index: 9999 !important;
@@ -57,7 +57,7 @@ header{
         display: none;
         overflow-y: auto;
         max-height: 500px;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(6px);
 
         .search_inner{
             position: relative;
@@ -69,24 +69,35 @@ header{
                 transform: translate(-50%, -50%);
                 color: rgb(187, 7, 7);
             }
-
         }
         
         
         .search_div{
             cursor: pointer;
-            border: 1px solid rgb(224, 224, 224);
-            border-radius: 20px;
+            border-bottom: 3px solid #e2e2e2;
             margin-bottom: 10px;
             padding: 15px;
+
+            .search_name{
+                margin: 0;
+                font-weight: 900;
+            }
+            .search_price{
+                margin: 0;
+                color: rgb(255, 89, 0);
+                font-size: 15px;
+                font-weight: 900;
+            }
             
-            img{
+            
+            .search_img{
                 width: 60px;
                 height: 60px;
+                margin: 10px 0;
             }
         }
         .search_div:hover{
-            background-color: #26f2a0;
+            background-color: #26f24b;
             
         }
     }
@@ -106,7 +117,7 @@ header{
             [data-bs-slide]{
                 width: 46px;
                 height: 46px;
-                background: rgba(246, 246, 246, 0.35);
+                background: rgba(169, 37, 37, 0.35);
                 border-radius: 8px;
                 top: 63%;
                 transform: translateY(-50%);
@@ -328,39 +339,94 @@ footer{
         margin-top: 126px;
     }
     .order_box{
-        display: flex;
-        border-radius: 12px;
-        border: 1px solid #F6F6F6;
-        .order_name{
-            padding: 24px 104px 0px 28px;
+        
+        .head_row{
             
-        }
-        .box{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-right:1px solid #BEBEBE ;
-            border-left:1px solid #BEBEBE ;
-            width: 106px;
-        }
-        .box2{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .order_price{
-                margin-left: 28px;
+            margin: auto;
+           
+
+            .order_col{
+                display: flex;
+                align-items: center;
+                height: 193px;
+                border-radius: 12px;
+                border: 1px solid #F6F6F6;
+                margin-bottom: 30px;
+                padding: 0;
+                .order_img{
+                    width: 266px;
+                    height: 193px;
+                    margin-right: 29px;
+                    border-radius: 12px;
+                }
+                
+                .order_name{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #121212;
+                    margin-top: -107px;
+                    margin-right: 104px;
+                    width: 242px;
+                }
+
+                .order_duble{
+                    border: 1px solid #BEBEBE;
+                    border-bottom: none;
+                    border-top: none;
+                    height: 100%;
+                    width: 205px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    // font-style: normal;
+                    // font-weight: 700;
+                    // font-size: 28px;
+                    // line-height: 34px;
+
+                    .order_count{
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        margin-right: 8px;
+                        margin-left: 8px;
+                        color: #121212;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 34px;
+                    }
+
+                    .minus{
+                        cursor: pointer;
+                    }
+                    .pluse{
+                        cursor: pointer;
+                    }
+
+                }
+
+                .order_price{
+                    margin-left: 28px
+                }
+
+                .order_dlt{
+                    margin-left: 28px;
+                    cursor: pointer;
+                }
+
+
             }
-            .dlt{
-                margin-left: 28px;
-                cursor: pointer;
-            }
+
+            
+
         }
-        .order_img{
-            width: 266px;
-            height: 193px;
-        }
+
+        
     }
-    .row{
+    .form_row{
         margin-top: 100px;
         border: 1px solid #F6F6F6;
         padding: 65px 76px 66px 76px;
@@ -460,9 +526,11 @@ footer{
         .nav{
             .nav_inner_container{
                 .input_container{
+                    padding: 15px 0;
                     .input{
                         width: 344px;
                         height: 34px;
+                        
                     }
                 }
             }

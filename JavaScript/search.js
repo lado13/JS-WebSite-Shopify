@@ -2,13 +2,13 @@
 
 let inp =  document.querySelector('.inp_search')
 
-inp.addEventListener('keyup', function(){
+inp.addEventListener('keyup', function(e){
 
     let searchboxs = document.querySelector('.search_box');
     
     searchboxs.style.display = 'block';
-    $(".loaders").css('opacity ','1')
-   
+    $(".loaders").css('opacity ','1');
+    
     let value = inp.value
   
     fetch('https://api.escuelajs.co/api/v1/products?title=' + value,{
@@ -45,10 +45,13 @@ inp.addEventListener('keyup', function(){
         div.className = 'search_div'
         let name = document.createElement('h6');
         div.appendChild(name);
+        name.className = 'search_name'
         let img = document.createElement('img');
         div.appendChild(img);
+        img.className = 'search_img'
         let price = document.createElement('p')
         div.appendChild(price)
+        price.className = 'search_price'
 
         name.innerText = data[i].title
         img.src = data[i].images
@@ -65,6 +68,8 @@ inp.addEventListener('keyup', function(){
     };
 });
 });
+
+
 
 
 

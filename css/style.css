@@ -48,7 +48,7 @@ header .search_box {
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid rgb(226, 226, 226);
+  border: 3px solid #e2e2e2;
   border-radius: 15px;
   width: 400px;
   z-index: 9999 !important;
@@ -56,8 +56,8 @@ header .search_box {
   display: none;
   overflow-y: auto;
   max-height: 500px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
 }
 header .search_box .search_inner {
   position: relative;
@@ -72,17 +72,27 @@ header .search_box .search_inner .loaders {
 }
 header .search_box .search_div {
   cursor: pointer;
-  border: 1px solid rgb(224, 224, 224);
-  border-radius: 20px;
+  border-bottom: 3px solid #e2e2e2;
   margin-bottom: 10px;
   padding: 15px;
 }
-header .search_box .search_div img {
+header .search_box .search_div .search_name {
+  margin: 0;
+  font-weight: 900;
+}
+header .search_box .search_div .search_price {
+  margin: 0;
+  color: rgb(255, 89, 0);
+  font-size: 15px;
+  font-weight: 900;
+}
+header .search_box .search_div .search_img {
   width: 60px;
   height: 60px;
+  margin: 10px 0;
 }
 header .search_box .search_div:hover {
-  background-color: #26f2a0;
+  background-color: #26f24b;
 }
 header .container {
   max-width: 1396px;
@@ -100,7 +110,7 @@ header .container .carousel {
 header .container .carousel [data-bs-slide] {
   width: 46px;
   height: 46px;
-  background: rgba(246, 246, 246, 0.35);
+  background: rgba(169, 37, 37, 0.35);
   border-radius: 8px;
   top: 63%;
   transform: translateY(-50%);
@@ -263,44 +273,75 @@ footer {
   padding: 20px 0;
   margin-top: 126px;
 }
-.order_container .order_box {
+.order_container .order_box .head_row {
+  margin: auto;
+}
+.order_container .order_box .head_row .order_col {
   display: flex;
+  align-items: center;
+  height: 193px;
   border-radius: 12px;
   border: 1px solid #F6F6F6;
+  margin-bottom: 30px;
+  padding: 0;
 }
-.order_container .order_box .order_name {
-  padding: 24px 104px 0px 28px;
+.order_container .order_box .head_row .order_col .order_img {
+  width: 266px;
+  height: 193px;
+  margin-right: 29px;
+  border-radius: 12px;
 }
-.order_container .order_box .box {
+.order_container .order_box .head_row .order_col .order_name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #121212;
+  margin-top: -107px;
+  margin-right: 104px;
+  width: 242px;
+}
+.order_container .order_box .head_row .order_col .order_duble {
+  border: 1px solid #BEBEBE;
+  border-bottom: none;
+  border-top: none;
+  height: 100%;
+  width: 205px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #BEBEBE;
-  border-left: 1px solid #BEBEBE;
-  width: 106px;
 }
-.order_container .order_box .box2 {
+.order_container .order_box .head_row .order_col .order_duble .order_count {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  color: #121212;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
 }
-.order_container .order_box .box2 .order_price {
+.order_container .order_box .head_row .order_col .order_duble .minus {
+  cursor: pointer;
+}
+.order_container .order_box .head_row .order_col .order_duble .pluse {
+  cursor: pointer;
+}
+.order_container .order_box .head_row .order_col .order_price {
   margin-left: 28px;
 }
-.order_container .order_box .box2 .dlt {
+.order_container .order_box .head_row .order_col .order_dlt {
   margin-left: 28px;
   cursor: pointer;
 }
-.order_container .order_box .order_img {
-  width: 266px;
-  height: 193px;
-}
-.order_container .row {
+.order_container .form_row {
   margin-top: 100px;
   border: 1px solid #F6F6F6;
   padding: 65px 76px 66px 76px;
 }
-.order_container .row .form-label {
+.order_container .form_row .form-label {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -309,7 +350,7 @@ footer {
   align-items: center;
   color: #BEBEBE;
 }
-.order_container .row .form-control {
+.order_container .form_row .form-control {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -371,6 +412,9 @@ footer {
 }
 
 @media (max-width: 1000px) {
+  header .nav .nav_inner_container .input_container {
+    padding: 15px 0;
+  }
   header .nav .nav_inner_container .input_container .input {
     width: 344px;
     height: 34px;

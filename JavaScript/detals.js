@@ -37,9 +37,26 @@ addbag.addEventListener('click', function(){
 
     URLp().then(Response => Response.json())
     .then(Response => { 
-
-        localStorage.setItem("cart "  + Response.title ,  Response.id)
         
+        let cartItems = []; //json array//
+        let NotExsist = true;
+        if (localStorage.getItem("cart"))
+        {
+            cartItems = JSON.parse(localStorage.getItem("cart"));
+          
+        }
+        for (let i = 0; i < cartItems.length; i++) {
+            if(cartItems[i].id  == Response.id){
+            addbag.innerText = 'უკვე კალათშია';
+            NotExsist = false;
+            }
+        }
+        if(NotExsist)
+        {
+            let item = {'id' : Response.id, 'ordercount': 1};
+            cartItems.push(item);
+            localStorage.setItem("cart",JSON.stringify(cartItems));
+        }
     })
 });
 

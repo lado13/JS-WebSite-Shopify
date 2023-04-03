@@ -34,6 +34,8 @@ fetch('https://api.escuelajs.co/api/v1/categories/',{
                 row.firstChild.remove()
                 
             }
+           
+
 
             Getprodact(data[i].id)
 
@@ -63,7 +65,7 @@ method:'get',
 .then(data =>{
 
 
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < data.length; i++) {
 
     $('.loader').css('opacity','0');
 
