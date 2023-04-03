@@ -467,13 +467,24 @@ footer {
        object-fit: cover;
   }
   .order_container .order_box {
-    display: block;
     text-align: center;
   }
-  .order_container .order_box .order_name {
-    margin-bottom: 53px;
+  .order_container .order_box .head_row .order_col {
+    display: block;
+    margin-bottom: 350px;
+    margin-top: 100px;
   }
-  .order_container .order_box .box2 {
-    margin-top: -35px;
+  .order_container .order_box .head_row .order_col .order_name {
+    margin-top: -238px;
+  }
+  .order_container .order_box .head_row .order_col .order_img {
+    margin: 0;
+  }
+  .order_container .order_box .head_row .order_col .order_duble {
+    margin: auto;
+    margin-top: 265px;
+  }
+  .order_container .order_box .head_row .order_col .order_price {
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

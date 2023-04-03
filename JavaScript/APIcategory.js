@@ -65,7 +65,7 @@ method:'get',
 .then(data =>{
 
 
-for (let i = 0; i < data.length; i++) {
+for (let i = 0; i < 15; i++) {
 
     $('.loader').css('opacity','0');
 

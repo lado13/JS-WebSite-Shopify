@@ -381,11 +381,7 @@ footer{
                     align-items: center;
                     justify-content: center;
 
-                    // font-style: normal;
-                    // font-weight: 700;
-                    // font-size: 28px;
-                    // line-height: 34px;
-
+                  
                     .order_count{
                         display: flex;
                         align-items: center;
@@ -600,17 +596,40 @@ footer{
 
     .order_container{
         .order_box{
-            display: block;
+
             text-align: center;
-            .order_name{
-                margin-bottom: 53px;
+            .head_row{
+                .order_col{
+                    display: block;
+                    margin-bottom: 350px;
+                    margin-top: 100px;
+
+                    .order_name{
+                        margin-top: -238px;
+                    }
+
+                    .order_img{
+                        margin: 0;
+                    }
+
+                    .order_duble{
+                        margin: auto;
+                        margin-top: 265px;
+                    }
+
+                    .order_price{
+                        margin-top: 50px;
+                    }
+                }
             }
-            .box2{
-                margin-top: -35px;
-            }
+            
+            
         }
 
     }
+
+
+
 
    
 
