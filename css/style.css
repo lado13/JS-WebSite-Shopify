@@ -210,6 +210,10 @@ header .container .carousel .carousel-inner .carusel_content .viwe_all .left_arr
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.content .container .product_list .category .category_logo {
+  width: 50px;
+  display: none;
+}
 .content .container .product_list .category ul .product_category:hover {
   background-color: #26f24b;
 }
@@ -435,6 +439,16 @@ footer {
   header .slide .laptop_box .laptop {
     width: 150px !important;
     height: 150px !important;
+  }
+  .category .category_ul {
+    display: none;
+  }
+  .category .category_logo {
+    display: block !important;
+    margin-top: 40px;
+  }
+  .category .exit {
+    display: none;
   }
   .product_detal .container .row .col {
     width: 600px;

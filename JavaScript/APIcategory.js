@@ -109,3 +109,26 @@ $('.loader').css('opacity','0');
 
 });
 };
+
+
+
+
+
+let categoryul = $('.category_ul');
+
+let s = true;
+$('.category_logo').click(function () { 
+    
+    if (s) {
+        categoryul.css('display','block')
+      
+
+    }else{
+        categoryul.css('display','none')
+       
+    }
+
+    s = !s
+    
+
+});

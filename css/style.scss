@@ -249,6 +249,14 @@ header{
                     transform: translate(-50%, -50%);
             }
             .category{
+                
+                .category_logo{
+                   
+                    width: 50px;
+                    display: none;
+                }
+                
+                
               ul{
 
                 .product_category:hover{
@@ -547,6 +555,24 @@ footer{
                     height: 150px !important;
                 }
             }
+        }
+    }
+
+    .category{
+        .category_ul{
+            display: none;
+            
+        }
+       
+        
+        .category_logo{
+            display: block !important;
+            margin-top: 40px;
+            
+        }
+        
+        .exit{
+            display: none ;
         }
     }
 
