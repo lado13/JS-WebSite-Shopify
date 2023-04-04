@@ -121,10 +121,12 @@ $('.category_logo').click(function () {
     
     if (s) {
         categoryul.css('display','block')
+        
       
 
     }else{
         categoryul.css('display','none')
+       
        
     }
 

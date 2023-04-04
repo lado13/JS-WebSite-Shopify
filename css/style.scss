@@ -255,6 +255,13 @@ header{
                     width: 50px;
                     display: none;
                 }
+                .category_title{
+                    display: none;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    color:#BEBEBE;
+                    margin-bottom: 15px;
+                }
                 
                 
               ul{
@@ -568,12 +575,14 @@ footer{
         .category_logo{
             display: block !important;
             margin-top: 40px;
+            transition: all 4s ease-in-out;
             
         }
-        
-        .exit{
-            display: none ;
+        .category_title{
+            display: block !important;
         }
+        
+        
     }
 
     .product_detal{

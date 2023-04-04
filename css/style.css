@@ -214,6 +214,13 @@ header .container .carousel .carousel-inner .carusel_content .viwe_all .left_arr
   width: 50px;
   display: none;
 }
+.content .container .product_list .category .category_title {
+  display: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #BEBEBE;
+  margin-bottom: 15px;
+}
 .content .container .product_list .category ul .product_category:hover {
   background-color: #26f24b;
 }
@@ -446,9 +453,10 @@ footer {
   .category .category_logo {
     display: block !important;
     margin-top: 40px;
+    transition: all 4s ease-in-out;
   }
-  .category .exit {
-    display: none;
+  .category .category_title {
+    display: block !important;
   }
   .product_detal .container .row .col {
     width: 600px;
