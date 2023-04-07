@@ -1,12 +1,11 @@
-$('.beg').click(function () { 
+$('.beg').click(function () {
     window.location = 'order.html'
 });
 
-$('.logo').click(function(){
+$('.logo').click(function () {
     window.location = 'index.html'
 })
 
 
 
 
-        
