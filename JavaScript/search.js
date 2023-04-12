@@ -31,10 +31,12 @@ inp.addEventListener('keyup', function (e) {
             if (data.length == 0 || value == '') {
 
                 searchbox.style.display = 'none'
+                filterbox.style.display = 'none'
 
             } else {
 
                 searchbox.style.display = 'block'
+                filterbox.style.display = 'block'
 
             }
 
@@ -69,6 +71,13 @@ inp.addEventListener('keyup', function (e) {
         });
 });
 
+
+let filterbtn = document.querySelector('.viwe_more_filter');
+let filterbox = document.querySelector('.filter_container')
+
+filterbtn.addEventListener('click',function(){
+    window.location = 'viwe.html'
+})
 
 
 

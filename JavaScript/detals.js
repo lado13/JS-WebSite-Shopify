@@ -19,6 +19,8 @@ async function Detals() {
             document.querySelector('.product_price').innerText = 'Price: ' + Response.price + ' $';
             document.querySelector('.detals_img').src = Response.images;
             document.querySelector('.product_description').innerText = Response.description;
+            document.querySelector('.product_update').innerText = Response.updatedAt;
+            document.querySelector('.creation').innerText = Response.creationAt;
 
         }).catch(fale => {
 
@@ -71,3 +73,67 @@ addbag.addEventListener('click', function () {
 });
 
 Detals();
+
+
+
+let btn = $('.det_btn');
+let btn2 = $('.rev_btn');
+let update = $('.product_update');
+let creation = $('.creation');
+let detbtn = $('.det_btn')
+let revbtn = $('.rev_btn')
+
+let s  = true;
+
+$('.det_btn').click(function () { 
+
+   if (s) {
+    
+    btn.css('border-bottom-color','white')
+    btn2.css('border-bottom-color','#269DF2')
+    creation.css('display', 'none')
+    update.css('display', 'block')
+    revbtn.css('background-color', '#BEBEBE')
+    revbtn.css('color', '#ffffff')
+
+   }else{
+
+    
+    detbtn.css('background-color', '#ffffff')
+    detbtn.css('color', '#000000')
+
+   }
+
+  
+    
+   s = !s
+});
+
+
+
+
+
+let m = true
+
+$('.rev_btn').click(function () { 
+
+    if (m) {
+    
+        btn2.css('border-bottom-color','white')
+        btn.css('border-bottom-color','#269DF2')
+        creation.css('display', 'block')
+        update.css('display', 'none')
+        detbtn.css('background-color', '#BEBEBE')
+        detbtn.css('color', '#ffffff')
+    
+       }else{
+    
+        
+        revbtn.css('background-color', '#ffffff')
+        revbtn.css('color', '#000000')
+    
+       }
+        
+       m = !m
+    
+});

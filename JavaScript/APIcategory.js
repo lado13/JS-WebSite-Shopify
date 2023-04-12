@@ -6,6 +6,8 @@ fetch('https://api.escuelajs.co/api/v1/categories/', {
     method: 'get',
 
 }).then(res => res.json())
+
+
     .then(data => {
 
         for (let i = 0; i < data.length; i++) {
@@ -49,6 +51,8 @@ fetch('https://api.escuelajs.co/api/v1/categories/', {
         $('.loader').css('opacity', '0');
 
     });
+
+
 
 
 function Getprodact(id) {
@@ -115,6 +119,7 @@ function Getprodact(id) {
 let categoryul = $('.category_ul');
 
 let s = true;
+
 $('.category_logo').click(function () {
 
     if (s) {
