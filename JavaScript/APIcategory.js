@@ -10,7 +10,7 @@ fetch('https://api.escuelajs.co/api/v1/categories/', {
 
     .then(data => {
 
-        for (let i = 0; i < data.length; i++) {
+        for (let i = 0; i < 5; i++) {
 
             let ul = document.querySelector('ul');
             let li = document.createElement('li');
@@ -33,11 +33,11 @@ fetch('https://api.escuelajs.co/api/v1/categories/', {
 
                 while (row.firstChild) {
 
-                    row.firstChild.remove()
+                    row.firstChild.remove();
 
                 }
 
-                Getprodact(data[i].id)
+                Getprodact(data[i].id);
 
             });
         };
@@ -57,8 +57,6 @@ fetch('https://api.escuelajs.co/api/v1/categories/', {
 
 function Getprodact(id) {
 
-
-
     fetch('https://api.escuelajs.co/api/v1/products/', {
 
         method: 'get',
@@ -67,7 +65,7 @@ function Getprodact(id) {
         .then(data => {
 
 
-            for (let i = 0; i < data.length; i++) {
+            for (let i = 0; i < 25; i++) {
 
                 $('.loader').css('opacity', '0');
 
@@ -85,9 +83,9 @@ function Getprodact(id) {
                     let price = document.createElement('h4');
                     col.appendChild(price);
 
-                    img.src = data[i].images
-                    name.innerText = data[i].title
-                    price.innerText = 'Price:  ' + data[i].price + '  $'
+                    img.src = data[i].images;
+                    name.innerText = data[i].title;
+                    price.innerText = 'Price:  ' + data[i].price + '  $';
 
                     col.addEventListener('click', function () {
 
@@ -124,12 +122,12 @@ $('.category_logo').click(function () {
 
     if (s) {
 
-        categoryul.css('display', 'block')
+        categoryul.css('display', 'block');
 
     } else {
 
-        categoryul.css('display', 'none')
+        categoryul.css('display', 'none');
     }
 
-    s = !s
+    s = !s;
 });

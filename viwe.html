@@ -78,19 +78,57 @@
           </h3>
 
           <div class="brands_price_box">
-            <span>from</span>
-            <span class="brands_price"></span>
-            <span>to</span>
-            <span class="brands_price2"></span>
-            <div class="d-block range_box">
-              <input class="inp_range" type="range">
-              <span>
-                <button class="range_btn">
-                  OK
-                </button>
-              </span>
+
+            <div class="price_input">
+              <div class="filed">
+
+                <span>from</span>
+                <p class="input_min inner_number"></p>
+
+              </div>
+
+              <div class="filed">
+
+                <span>to</span>
+                <p class="input_max inner_number"></p>
+
+              </div>
             </div>
+
+
+            <div class="range_container">
+              <div class="slider">
+                <div class="range_input">
+
+                  <input type="range" min="0" max="5000" value="2500" step="100">
+                  <input type="range" min="0" max="5000" value="7500" step="100">
+
+                </div>
+              </div>
+
+              <div class="range_btn_box">
+
+                <button class="range_btn">OK</button>
+
+              </div>
+
+            </div>
+
+
+
+
+
+
           </div>
+
+
+
+
+
+
+
+
+
 
         </div>
 
@@ -107,6 +145,84 @@
       </div>
 
       <div class="product_viwe">
+
+        <svg class="filter_loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+          <circle cx="75" cy="50" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.9166666666666666s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.9166666666666666s"></animate>
+          </circle>
+          <circle cx="71.65063509461098" cy="62.5" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.8333333333333334s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.8333333333333334s"></animate>
+          </circle>
+          <circle cx="62.5" cy="71.65063509461096" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.75s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.75s"></animate>
+          </circle>
+          <circle cx="50" cy="75" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.6666666666666666s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.6666666666666666s"></animate>
+          </circle>
+          <circle cx="37.50000000000001" cy="71.65063509461098" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.5833333333333334s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.5833333333333334s"></animate>
+          </circle>
+          <circle cx="28.34936490538903" cy="62.5" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.5s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.5s"></animate>
+          </circle>
+          <circle cx="25" cy="50" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.4166666666666667s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.4166666666666667s"></animate>
+          </circle>
+          <circle cx="28.34936490538903" cy="37.50000000000001" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.3333333333333333s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.3333333333333333s"></animate>
+          </circle>
+          <circle cx="37.499999999999986" cy="28.34936490538904" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.25s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.25s"></animate>
+          </circle>
+          <circle cx="49.99999999999999" cy="25" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.16666666666666666s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.16666666666666666s"></animate>
+          </circle>
+          <circle cx="62.5" cy="28.349364905389034" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="-0.08333333333333333s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.08333333333333333s"></animate>
+          </circle>
+          <circle cx="71.65063509461096" cy="37.499999999999986" fill="#000000" r="5">
+            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite"
+              begin="0s"></animate>
+            <animate attributeName="fill" values="#000000;#000000;#35ffb8;#000000;#000000" repeatCount="indefinite"
+              times="0;0.1;0.2;0.3;1" dur="1s" begin="0s"></animate>
+          </circle>
+          <!-- [ldio] generated by https://loading.io/ -->
+        </svg>
+
 
       </div>
 
@@ -130,6 +246,7 @@
     <script src="JavaScript/app.js"></script>
     <script src="JavaScript/search.js"></script>
     <script src="JavaScript/viwe.js"></script>
+    <script src="JavaScript/priceFilter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>

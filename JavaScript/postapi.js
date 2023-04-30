@@ -6,7 +6,7 @@ orderbtn.addEventListener('click', async function () {
     let name = document.querySelector('.name');
     let number = document.querySelector('.number');
     let mail = document.querySelector('.mail');
-    let address = document.querySelector('.address')
+    let address = document.querySelector('.address');
 
     let data = {
         'product': carditem,
@@ -19,12 +19,18 @@ orderbtn.addEventListener('click', async function () {
     console.log(data);
 
     fetch('https://reqbin.com/echo/post/json', {
+
         method: 'POST',
+
         headers: {
+
         },
+
         body: JSON.stringify(data)
+
     })
         .then(response => response.json())
+
         .then(response => console.log(JSON.stringify(response)))
 
 });

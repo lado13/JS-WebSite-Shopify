@@ -244,10 +244,10 @@ header .container .carousel .carousel-inner .carusel_content .viwe_all .left_arr
 }
 .content .container .product_list .category ul li {
   position: relative;
-  border: 1px solid #f6f6f6;
+  border: 2px solid rgba(235, 235, 235, 0.5176470588);
   list-style-type: none;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
+  background-color: #F6F6F6;
 }
 .content .container .product_list .category ul li h4 {
   font-style: normal;
@@ -498,6 +498,9 @@ footer {
   padding: 17px 12px;
   cursor: pointer;
 }
+.viwe_more_container .category_container .category .category_div:hover {
+  background-color: #26f24b;
+}
 .viwe_more_container .category_container .Mybrands {
   font-style: normal;
   font-weight: 500;
@@ -544,46 +547,81 @@ footer {
 .viwe_more_container .category_container .Myprice .Myprice_title {
   margin-bottom: 33px;
 }
-.viwe_more_container .category_container .Myprice .brands_price_box .range_box {
-  margin-top: 12px;
+.viwe_more_container .category_container .Myprice .brands_price_box .price_input {
+  display: flex;
 }
-.viwe_more_container .category_container .Myprice .brands_price_box .range_box .inp_range {
-  width: 177px;
+.viwe_more_container .category_container .Myprice .brands_price_box .price_input .filed {
+  display: flex;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .price_input .filed .inner_number {
+  margin-left: 18px;
+  margin-right: 18px;
+  width: 78px;
+  height: 34px;
+  border: 1px solid #121212;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BEBEBE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container {
+  display: flex;
+  align-items: center;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container .slider {
+  position: relative;
+  width: 208px;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container .slider .range_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container .slider .range_input input[type=range] {
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container .slider .range_input input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: #269DF2;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container .slider .range_input input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #269DF2;
   cursor: pointer;
+  margin-top: -9px;
+  position: relative;
+  z-index: 1;
 }
-.viwe_more_container .category_container .Myprice .brands_price_box .range_box .range_btn {
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container .slider .range_input .range_btn {
+  float: right;
+}
+.viwe_more_container .category_container .Myprice .brands_price_box .range_container .range_btn_box .range_btn {
+  width: 60px;
+  height: 34px;
+  background-color: #269DF2;
+  border: none;
+  border-radius: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #F6F6F6;
-  width: 60px;
-  height: 34px;
-  background-color: #269DF2;
-  border-radius: 8px;
-  border: none;
   margin-left: 28px;
-}
-.viwe_more_container .category_container .Myprice .brands_price_box .brands_price .number_filter {
-  width: 78px;
-  margin-left: 18px;
-  margin-right: 18px;
-  border: 1px solid #121212;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #BEBEBE;
-}
-.viwe_more_container .category_container .Myprice .brands_price_box .brands_price2 .number_filter2 {
-  width: 78px;
-  margin-left: 18px;
-  border: 1px solid #121212;
-  border-radius: 8px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #BEBEBE;
 }
 .viwe_more_container .category_container .rating_box {
   font-style: normal;
@@ -591,11 +629,19 @@ footer {
   font-size: 28px;
   line-height: 34px;
   margin-top: 68px;
+  margin-bottom: 200px;
 }
 .viwe_more_container .product_viwe {
   width: 75%;
   margin-left: 68px;
   margin-bottom: 213px;
+}
+.viwe_more_container .product_viwe .filter_loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+  background: transparent;
 }
 .viwe_more_container .product_viwe .product_border {
   display: flex;

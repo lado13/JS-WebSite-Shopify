@@ -1,10 +1,14 @@
 $('.beg').click(function () {
-    window.location = 'order.html'
+
+    window.location = 'order.html';
+
 });
 
 $('.logo').click(function () {
-    window.location = 'index.html'
-})
+
+    window.location = 'index.html';
+
+});
 
 
 

@@ -1,6 +1,6 @@
 
 
-let inp = document.querySelector('.inp_search')
+let inp = document.querySelector('.inp_search');
 
 inp.addEventListener('keyup', function (e) {
 
@@ -9,7 +9,7 @@ inp.addEventListener('keyup', function (e) {
     searchboxs.style.display = 'block';
     $(".loaders").css('opacity ', '1');
 
-    let value = inp.value
+    let value = inp.value;
 
     fetch('https://api.escuelajs.co/api/v1/products?title=' + value, {
 
@@ -18,25 +18,25 @@ inp.addEventListener('keyup', function (e) {
     }).then(res => res.json())
         .then(data => {
 
-            $(".loaders").css('opacity ', '0')
+            $(".loaders").css('opacity ', '0');
 
             let searchbox = document.querySelector('.search_box');
 
             while (searchbox.firstChild) {
 
-                searchbox.firstChild.remove()
+                searchbox.firstChild.remove();
 
             }
 
             if (data.length == 0 || value == '') {
 
-                searchbox.style.display = 'none'
-                filterbox.style.display = 'none'
+                searchbox.style.display = 'none';
+                filterbox.style.display = 'none';
 
             } else {
 
-                searchbox.style.display = 'block'
-                filterbox.style.display = 'block'
+                searchbox.style.display = 'block';
+                filterbox.style.display = 'block';
 
             }
 
@@ -44,20 +44,24 @@ inp.addEventListener('keyup', function (e) {
 
                 let div = document.createElement('div');
                 searchbox.appendChild(div);
-                div.className = 'search_div'
+                div.className = 'search_div';
+
                 let name = document.createElement('h6');
                 div.appendChild(name);
-                name.className = 'search_name'
+                name.className = 'search_name';
+
                 let img = document.createElement('img');
                 div.appendChild(img);
-                img.className = 'search_img'
-                let price = document.createElement('p')
-                div.appendChild(price)
-                price.className = 'search_price'
+                img.className = 'search_img';
 
-                name.innerText = data[i].title
-                img.src = data[i].images
-                price.innerText = 'Price: ' + data[i].price + ' $'
+                let price = document.createElement('p');
+                div.appendChild(price);
+                price.className = 'search_price';
+
+
+                name.innerText = data[i].title;
+                img.src = data[i].images;
+                price.innerText = 'Price: ' + data[i].price + ' $';
 
 
                 div.addEventListener('click', function () {
@@ -73,11 +77,13 @@ inp.addEventListener('keyup', function (e) {
 
 
 let filterbtn = document.querySelector('.viwe_more_filter');
-let filterbox = document.querySelector('.filter_container')
+let filterbox = document.querySelector('.filter_container');
 
 filterbtn.addEventListener('click',function(){
-    window.location = 'viwe.html'
-})
+
+    window.location = 'viwe.html';
+
+});
 
 
 

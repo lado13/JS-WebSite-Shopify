@@ -314,6 +314,7 @@ header {
                     text-transform: capitalize;
                     color: #BEBEBE;
                     margin-bottom: 15px;
+
                 }
 
 
@@ -326,10 +327,10 @@ header {
 
                     li {
                         position: relative;
-                        border: 1px solid #f6f6f6;
+                        border: 2px solid #ebebeb84;
                         list-style-type: none;
                         cursor: pointer;
-                        transition: all .1s ease-in-out;
+                        background-color: #F6F6F6;
 
 
 
@@ -682,6 +683,10 @@ footer {
                 padding: 17px 12px;
                 cursor: pointer;
             }
+
+            .category_div:hover {
+                background-color: #26f24b;
+            }
         }
 
 
@@ -750,70 +755,117 @@ footer {
             .brands_price_box {
 
 
-                .range_box {
+                .price_input {
+                    display: flex;
+
+                    .filed {
+                        display: flex;
 
 
-                    margin-top: 12px;
-
-
-
-                    .inp_range {
-                        width: 177px;
-                        cursor: pointer;
-                    }
-
-                    .range_btn {
-
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 24px;
-                        color: #F6F6F6;
-                        width: 60px;
-                        height: 34px;
-                        background-color: #269DF2;
-                        border-radius: 8px;
-                        border: none;
-                        margin-left: 28px;
+                        .inner_number {
+                            margin-left: 18px;
+                            margin-right: 18px;
+                            width: 78px;
+                            height: 34px;
+                            border: 1px solid #121212;
+                            border-radius: 8px;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #BEBEBE;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
 
                     }
                 }
 
+                .range_container {
 
-                .brands_price {
+                    display: flex;
+                    align-items: center;
+                   
 
-                    .number_filter {
-                        width: 78px;
-                        margin-left: 18px;
-                        margin-right: 18px;
-                        border: 1px solid #121212;
-                        border-radius: 8px;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #BEBEBE;
+                    .slider {
 
+                        position: relative;
+                        width: 208px;
+
+
+
+
+
+                        .range_input {
+
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+
+                            input[type=range] {
+                                position: absolute;
+                                width: 100%;
+                                appearance: none;
+
+                            }
+
+
+
+                            input[type=range]::-webkit-slider-runnable-track {
+                                width: 100%;
+                                height: 5px;
+                                border-radius: 3px;
+                                border: none;
+                                background-color: #269DF2;
+                            }
+
+                            input[type=range]::-webkit-slider-thumb {
+
+                                -webkit-appearance: none;
+                                width: 24px;
+                                height: 24px;
+                                border-radius: 50%;
+                                background-color: #269DF2;
+                                cursor: pointer;
+                                margin-top: -9px;
+                                position: relative;
+                                z-index: 1;
+                            }
+
+
+                            .range_btn {
+                                float: right;
+                            }
+
+                        }
                     }
 
+                    .range_btn_box {
+
+                        .range_btn {
+                            width: 60px;
+                            height: 34px;
+                            background-color: #269DF2;
+                            border: none;
+                            border-radius: 8px;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #F6F6F6;
+                            margin-left: 28px;
+                            
+
+                        }
+                    }
 
                 }
 
-                .brands_price2 {
-
-                    .number_filter2 {
-
-                        width: 78px;
-                        margin-left: 18px;
-                        border: 1px solid #121212;
-                        border-radius: 8px;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #BEBEBE;
 
 
-                    }
-                }
+
+
 
             }
 
@@ -826,6 +878,7 @@ footer {
             font-size: 28px;
             line-height: 34px;
             margin-top: 68px;
+            margin-bottom: 200px;
 
 
 
@@ -838,6 +891,16 @@ footer {
         width: 75%;
         margin-left: 68px;
         margin-bottom: 213px;
+
+
+        .filter_loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50% -50%);
+            background: transparent;
+
+        }
 
         .product_border {
             display: flex;
@@ -1045,30 +1108,31 @@ footer {
 
 
 
-    .viwe_more_container{
+    .viwe_more_container {
         display: block;
 
-        .category_container{
+        .category_container {
             width: 100%;
 
-            .Mybrands{
+            .Mybrands {
                 padding-left: 20px;
             }
 
-            .Myprice{
+            .Myprice {
                 padding-left: 20px;
             }
 
-            .rating_box{
+            .rating_box {
                 padding-left: 20px;
                 margin-bottom: 50px;
             }
         }
 
-        .product_viwe{
+        .product_viwe {
 
             margin: auto;
-            .product_border{
+
+            .product_border {
                 display: block;
                 text-align: center;
             }
