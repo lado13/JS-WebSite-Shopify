@@ -138,19 +138,9 @@ function ProductFilter(id) {
 
                     link.addEventListener('click', function () {
 
-                        let id = data[i].id;
-                        localStorage.setItem('id', id);
-
-                        
-
-                    })
 
 
 
 
 
 
-                }
-            }
-        })
-}
