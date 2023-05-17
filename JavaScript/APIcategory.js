@@ -115,7 +115,6 @@ function Getprodact(id) {
 
 
 let categoryul = $('.category_ul');
-
 let s = true;
 
 $('.category_logo').click(function () {

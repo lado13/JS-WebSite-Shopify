@@ -28,6 +28,13 @@ inp.addEventListener('keyup', function (e) {
 
             }
 
+            let body = document.querySelector('body');
+
+            body.addEventListener('click',function(){
+                searchbox.style.display = 'none';
+                filterbox.style.display = 'none';
+            })
+
             if (data.length == 0 || value == '') {
 
                 searchbox.style.display = 'none';

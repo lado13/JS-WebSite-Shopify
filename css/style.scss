@@ -1,12 +1,111 @@
+
+   body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    nav{
+        background-color: #393939 !important;
+      
+        a{
+            color: #ffffff !important;
+        }
+    }
+
+    .inp_search{
+        background-color: #2c2c2c  !important;
+        color: #ffffff !important;
+    }
+    .category_ul li {
+        background-color: #393939  !important;
+        border: 1px solid #ffffff !important;
+        h4{
+            color: #ffffff !important;
+        }
+    }
+    .circle{
+        background-color: #ffffff !important;
+        margin-left: 24px;
+      
+    
+    }
+    .head_row col h3, p{
+        color: #ffffff !important;
+    }
+    .order_container{
+        .title{
+            color: #ffffff !important;
+        }
+    }
+    .category div {
+        background-color: #393939 !important;
+        color: #ffffff !important;
+        
+    }
+  }
+
+
+
+
 header {
     .nav {
         position: relative;
         background-color: #F7F7F7;
         box-shadow: 0px 2px 6px 2px rgba(184, 184, 184, 0.25);
 
+        .dark_mode{
+            width: 40px;
+            height: 17px;
+            border: 1px solid rgb(148, 148, 148);
+            margin-right: 10px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+           
+
+            .circle{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #000000;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+            }
+        }
+
         .nav_inner_container {
             max-width: 1440px;
             padding: 12px 22px 12px 22px;
+
+            .order_box{
+                position: relative;
+               .quantity_box{
+                position: absolute;
+                right: -12px;
+                top: -8px;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: #269DF2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              
+                .quantity{
+                   
+                    color: rgb(255, 255, 255);
+                    font-size: 16px;
+                    font-weight: 500;
+                  
+                    
+                    
+                }
+               }
+            }
 
             .logo {
                 cursor: pointer;
@@ -288,6 +387,10 @@ header {
         .product_list {
             position: relative;
             margin-top: 94px;
+
+            .loader{
+                background: transparent !important;
+            }
 
             .error {
                 text-align: center;

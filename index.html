@@ -21,7 +21,19 @@
             aria-label="Search">
           <img class="search search_btn" src="images/search.svg">
         </form>
-        <a href="#"><img class="beg" src="images/beg.svg"></a>
+        <a class="order_box beg" href="#"><img src="images/beg.svg">
+
+          <div class="quantity_box">
+            <span class="quantity"> 0 </span>
+
+          </div>
+        </a>
+       
+      </div>
+      <div class="dark_mode">
+        <div class="circle" onclick="toggleDarkMode()">
+
+        </div>
       </div>
     </nav>
 
@@ -244,7 +256,9 @@
         <div class="col-lg-9 products p-0">
           <div class="row product ">
 
+            
           </div>
+       
         </div>
       </div>
     </div>
@@ -261,6 +275,8 @@
   </footer>
 
 
+  <script src="JavaScript/darkMode.js"></script>
+  <script src="JavaScript/orderBoxQuantity.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="JavaScript/APIcategory.js"></script>
   <script src="JavaScript/app.js"></script>
