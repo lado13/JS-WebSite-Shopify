@@ -42,7 +42,7 @@ let addbag = document.querySelector('.add_bag');
 
 addbag.addEventListener('click', function () {
 
-    addbag.innerText = 'დამატებულია';
+    addbag.innerText = 'Added';
 
     ProductDetal().then(Response => Response.json())
 
@@ -60,7 +60,7 @@ addbag.addEventListener('click', function () {
 
                 if (cardItems[i].id == Response.id) {
 
-                    addbag.innerText = 'უკვე კალათშია';
+                    addbag.innerText = 'Already added!';
                     NotExsist = false;
 
                 }

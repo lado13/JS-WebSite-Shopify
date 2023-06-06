@@ -126,7 +126,7 @@ header .search_box {
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 3px solid #e2e2e2;
+  border: 2px solid #269DF2;
   border-radius: 15px;
   width: 400px;
   z-index: 9999 !important;
@@ -155,7 +155,7 @@ header .search_box .search_inner .viwe_more_filter {
 }
 header .search_box .search_div {
   cursor: pointer;
-  border-bottom: 3px solid #e2e2e2;
+  border-bottom: 1px solid #269DF2;
   margin-bottom: 10px;
   padding: 15px;
 }
@@ -175,7 +175,7 @@ header .search_box .search_div .search_img {
   margin: 10px 0;
 }
 header .search_box .search_div:hover {
-  background-color: #26f24b;
+  background-color: #eca172;
 }
 header .filter_container {
   position: absolute;
@@ -359,8 +359,8 @@ header .container .carousel .carousel-inner .carusel_content .viwe_all .left_arr
   border-radius: 10px 10px 0 0;
 }
 .content .container .product_list .products .product col:hover {
-  scale: 1.1;
-  box-shadow: 0px 2px 6px 1px rgba(29, 142, 129, 0.5450980392);
+  scale: 1.02;
+  box-shadow: 0px 2px 6px 1px #269DF2;
 }
 
 footer {

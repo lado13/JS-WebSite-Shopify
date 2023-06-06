@@ -87,7 +87,7 @@ async function Detals() {
                 let price = document.createElement('h4');
                 col.appendChild(price);
                 price.className = 'order_price';
-                price.innerText = Response.price + '  GEL';
+                price.innerText = Response.price + '  $';
 
                 let dlt = document.createElement('img');
                 col.appendChild(dlt);

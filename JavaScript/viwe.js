@@ -115,49 +115,10 @@ function ProductFilter(id) {
 
                     let link = document.createElement('a');
                     addbag.appendChild(link);
-                    link.innerText = 'კალათში დამატება';
+                    link.innerText = ' Add to cart';
                     link.className = 'seeMore_dtl_btn';
 
 
-                    link.addEventListener('click', function () {
-
-
-                       
-
-
-                        let cardItems = []; //json array//
-                        let NotExsist = true;
-
-
-                        let id = data[i].id;
-                        localStorage.setItem('card', id);
-
-                        if (localStorage.getItem("card")) {
-
-                            cardItems = JSON.parse(localStorage.getItem("card"));
-
-                        }
-                        for (let i = 0; i < cardItems.length; i++) {
-
-                            if (cardItems[i].id == data.id) {
-
-                              
-                                link.innerText = 'უკვე კალათშია';
-                                NotExsist = false;
-
-                            }
-                        }
-                        if (NotExsist) {
-
-                            let item = { 'id': data.id, 'ordercount': 1 };
-
-                            cardItems.push(item);
-                            localStorage.setItem("card", JSON.stringify(cardItems));
-
-                        }
-
-
-                    });
                 };
             };
         });
