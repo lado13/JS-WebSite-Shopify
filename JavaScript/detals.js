@@ -48,7 +48,7 @@ addbag.addEventListener('click', function () {
 
         .then(Response => {
 
-            let cardItems = []; //json array//
+            let cardItems = [];
             let NotExsist = true;
 
             if (localStorage.getItem("card")) {
@@ -56,20 +56,25 @@ addbag.addEventListener('click', function () {
                 cardItems = JSON.parse(localStorage.getItem("card"));
 
             }
-            for (let i = 0; i < cardItems.length; i++) {
 
-                if (cardItems[i].id == Response.id) {
+            cardItems.forEach(el => {
+
+
+                if (el.id == Response.id) {
 
                     addbag.innerText = 'Already added!';
                     NotExsist = false;
 
                 }
-            }
+
+            });
+
+
             if (NotExsist) {
 
                 let item = { 'id': Response.id, 'ordercount': 1 };
 
-                cardItems.push(item);
+                cardItems.unshift(item);
                 localStorage.setItem("card", JSON.stringify(cardItems));
 
             }

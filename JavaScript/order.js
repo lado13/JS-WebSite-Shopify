@@ -18,9 +18,10 @@ let carditem = JSON.parse(localStorage.getItem("card"));
 
 async function Detals() {
 
-    for (let i = 0; i < carditem.length; i++) {
+    carditem.forEach(el => {
 
-        DetalsProductColl(carditem[i].id).then(Response => Response.json())
+
+        DetalsProductColl(el.id).then(Response => Response.json())
 
             .then(Response => {
 
@@ -52,7 +53,7 @@ async function Detals() {
 
                 let text = document.createElement('p');
                 duble.appendChild(text);
-                text.innerText = carditem[i].ordercount;
+                text.innerText = el.ordercount;
                 text.className = 'order_count';
 
 
@@ -64,11 +65,11 @@ async function Detals() {
 
                 dubleimg2.addEventListener('click', function () {
 
-                    if (carditem[i].ordercount > 1) {
+                    if (el.ordercount > 1) {
 
-                        carditem[i].ordercount--;
+                        el.ordercount--;
                         localStorage.setItem('card', JSON.stringify(carditem));
-                        text.innerText = carditem[i].ordercount;
+                        text.innerText = el.ordercount;
 
                     }
 
@@ -77,10 +78,10 @@ async function Detals() {
 
                 dubleimg.addEventListener("click", function () {
 
-                    carditem[i].ordercount++;
+                    el.ordercount++;
                     localStorage.setItem("card", JSON.stringify(carditem));
-                    text.innerText = carditem[i].ordercount;
-                    
+                    text.innerText = el.ordercount;
+
                 })
 
 
@@ -97,7 +98,7 @@ async function Detals() {
                 dlt.addEventListener('click', function () {
 
                     col.remove();
-                    carditem.splice(i, 1);
+                    carditem.splice(el, 1);
                     localStorage.setItem("card", JSON.stringify(carditem));
 
                 })
@@ -112,7 +113,10 @@ async function Detals() {
                 $('.loader').css('opacity', '0');
 
             });
-    }
+
+    });
+
+
 };
 
 Detals();
@@ -120,16 +124,24 @@ Detals();
 
 
 
-let quantity = document.querySelector('.quantity');
-let count = 0
+
+let CartBoxQuantity = () => {
+
+    let quantity = document.querySelector('.quantity');
+    let count = 0
 
 
 
 
-for (let i = 0; i < carditem.length; i++) {
- 
-    count++;
-    quantity.innerHTML = count;
-  
+    for (let i = 0; i < carditem.length; i++) {
+
+        count++;
+        quantity.innerHTML = count;
+
+
+    }
+
 
 }
+
+CartBoxQuantity();

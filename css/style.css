@@ -175,7 +175,7 @@ header .search_box .search_div .search_img {
   margin: 10px 0;
 }
 header .search_box .search_div:hover {
-  background-color: #eca172;
+  background-color: rgb(255, 89, 0);
 }
 header .filter_container {
   position: absolute;
